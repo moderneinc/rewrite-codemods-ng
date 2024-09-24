@@ -214,6 +214,7 @@ public abstract class NodeBasedRecipe extends ScanningRecipe<NodeBasedRecipe.Acc
     public static class Accumulator {
         @Getter
         final Path directory;
+
         final Map<Path, Long> beforeModificationTimestamps = new HashMap<>();
         final Set<Path> modified = new LinkedHashSet<>();
         final Map<String, AtomicInteger> extensionCounts = new HashMap<>();
